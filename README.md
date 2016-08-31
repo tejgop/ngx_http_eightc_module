@@ -2,11 +2,32 @@
 
 Harness the power of an esoteric language in Nginx!
 
+## Installing
+
+Download the module and configure:
+
+```bash
+$ ./configure --add-dynamic-module=ngx_http_eightc_module/
+$ make
+$ make install
+```
+
 ## EightC
 
 EightC is an esoteric language for the web. It has 1000 cells (variables) by default.
 Currently, EightC only supports one-level loops.
 
+##### Example:
+
+Put this in your `nginx.conf`:
+
+```
+location / {
+  run_eightc "++++++ [ > ++++++++++ < - ] +++++ .";
+}
+```
+
+When you reload Nginx, you should get the character 'A' when you send a request.
 
 ##### Commands:
 
@@ -21,7 +42,6 @@ Command|Description
 `]`|If current cell is not 0, go back to corresponding `[`
 `,`|Put one character of url arguments in current cell
 `;`|Put one character of POST body in current cell
-
 
 ## Todo
 
