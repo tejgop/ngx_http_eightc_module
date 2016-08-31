@@ -38,10 +38,6 @@ static ngx_command_t ngx_http_eightc_commands[] = {
 
 static ngx_str_t eightc_string;
 
-/*
- * The module context has hooks , here we have a hook for creating
- * location configuration
- */
 static ngx_http_module_t ngx_http_eightc_module_ctx = {
     NULL,                          /* preconfiguration */
     NULL,                          /* postconfiguration */
