@@ -45,4 +45,4 @@ Command|Description
 ## Todo
 
 - [ ] Implement multi level loops
-- [-] Add `,` command
+- [x] Add `,` command
