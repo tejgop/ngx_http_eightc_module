@@ -61,6 +61,8 @@ Command|Description
 `[`|If current cell equals 0, skip to corresponding `]`
 `]`|If current cell is not 0, go back to corresponding `[`
 `,`|Put one character of url arguments in current cell
+`#`|Add 48 to current cell
+`&`|Subtract 48 from current cell
 
 ## Todo
 
