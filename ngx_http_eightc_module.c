@@ -91,8 +91,8 @@ ngx_http_eightc_handler(ngx_http_request_t *r)
     strncpy(strtmp, (char*) eightc_string.data,eightc_string.len);
 
     char *strout = ngx_pcalloc(r->pool,100);
-    int cells[30000];
-    for(int i = 0;i<30000;i++){
+    int cells[1000];
+    for(int i = 0;i<1000;i++){
       cells[i] = 0;
     }
     int cell = 0;
