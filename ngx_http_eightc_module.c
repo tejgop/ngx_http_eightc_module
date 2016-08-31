@@ -56,11 +56,6 @@ static ngx_http_module_t ngx_http_eightc_module_ctx = {
     NULL                           /* merge location configuration */
 };
 
-
-/*
- * The module which binds the context and commands
- *
- */
 ngx_module_t ngx_http_eightc_module = {
     NGX_MODULE_V1,
     &ngx_http_eightc_module_ctx,    /* module context */
@@ -76,9 +71,6 @@ ngx_module_t ngx_http_eightc_module = {
     NGX_MODULE_V1_PADDING
 };
 
-/*
- * Main handler function of the module.
- */
 static ngx_int_t
 ngx_http_eightc_handler(ngx_http_request_t *r)
 {
