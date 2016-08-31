@@ -4,7 +4,7 @@ Harness the power of an esoteric language in Nginx!
 
 ## Installing
 
-Download the module and configure:
+[Download](https://github.com/tejgop/ngx_http_eightc_module/releases) the module and configure:
 
 ```bash
 $ ./configure --add-dynamic-module=ngx_http_eightc_module/
