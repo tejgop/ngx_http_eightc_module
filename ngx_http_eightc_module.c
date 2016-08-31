@@ -116,9 +116,14 @@ ngx_http_eightc_handler(ngx_http_request_t *r)
       }else if(strtmp[i] == ','){
         cells[cell] = args[argn];
         argn ++;
+      }else if(strtmp[i] == '#'){
+        cell += 48;
+      }else if(strtmp[i] == '&'){
+        cell -= 48;
       }
     }
     sz = strlen(strout);
+
 
     r->headers_out.status = NGX_HTTP_OK;
     r->headers_out.content_length_n = sz;
