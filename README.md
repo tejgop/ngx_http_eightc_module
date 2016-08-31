@@ -29,6 +29,26 @@ location / {
 
 When you reload Nginx, you should get the character 'A' when you send a request.
 
+This is a hello world:
+
+```
+location / {
+    run_eightc "+++++++ [ > ++++++++++ < - ] > ++.
+                < ++ [ > ++++++++++ < - ] >  +++++++++ .
+                +++++++ .
+                .
+                +++ .
+                < ++++++++ [ > ---------- < - ] > + .
+                < +++++ [ > +++++++++++ < - ] > .
+                < ++++ [ > ++++++ < - ] > .
+                +++ .
+                ------ .
+                -------- .
+                < ++++++++ [ > -------- < - ] > --- .";
+}
+```
+
+
 ##### Commands:
 
 Command|Description
