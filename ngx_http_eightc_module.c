@@ -37,7 +37,6 @@ static ngx_command_t ngx_http_eightc_commands[] = {
 
 
 static ngx_str_t eightc_string;
-
 static ngx_http_module_t ngx_http_eightc_module_ctx = {
     NULL,                          /* preconfiguration */
     NULL,                          /* postconfiguration */
@@ -75,8 +74,10 @@ ngx_http_eightc_handler(ngx_http_request_t *r)
 
     size_t sz;
     char *strtmp = ngx_pcalloc(r->pool,eightc_string.len);
-
     strncpy(strtmp, (char*) eightc_string.data,eightc_string.len);
+
+    char *args = ngx_pcalloc(r->pool,r->args.len);
+    strncpy(args, (char*) r->args.data,r->args.len);
 
     char *strout = ngx_pcalloc(r->pool,100);
     int cells[1000];
@@ -84,6 +85,8 @@ ngx_http_eightc_handler(ngx_http_request_t *r)
       cells[i] = 0;
     }
     int cell = 0;
+
+    int argn = 0;
 
     for(u_long i = 0;i<strlen(strtmp);i++){
       if(strtmp[i] == '+'){
@@ -110,6 +113,9 @@ ngx_http_eightc_handler(ngx_http_request_t *r)
           }
           i--;
         }
+      }else if(strtmp[i] == ','){
+        cells[cell] = args[argn];
+        argn ++;
       }
     }
 
