@@ -117,9 +117,9 @@ ngx_http_eightc_handler(ngx_http_request_t *r)
         cells[cell] = args[argn];
         argn ++;
       }else if(strtmp[i] == '#'){
-        cell += 48;
+        cells[cell] += 48;
       }else if(strtmp[i] == '&'){
-        cell -= 48;
+        cells[cell] -= 48;
       }
     }
     sz = strlen(strout);
