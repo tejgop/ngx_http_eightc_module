@@ -17,6 +17,10 @@ $ make install
 EightC is an esoteric language for the web. It has 1000 cells (variables) by default.
 Currently, EightC only supports one-level loops.
 
+It is named EightC because it used to have only eight symbols, now the name makes no sense :)
+
+EightC is based on a foul-named language that I do not want to mention on this page.
+
 ##### Example:
 
 Put this in your `nginx.conf`:
