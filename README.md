@@ -17,9 +17,9 @@ $ make install
 EightC is an esoteric language for the web. It has 1000 cells (variables) by default.
 Currently, EightC only supports one-level loops.
 
-It is named EightC because it used to have only eight symbols, now the name makes no sense :)
+It is named EightC because it used to have only eight symbols, now there are 10 so the name makes no sense :)
 
-EightC is based on a foul-named language that I do not want to mention on this page.
+EightC is inspired by Brainf***.
 
 ##### Example:
 
@@ -73,3 +73,7 @@ Command|Description
 
 - [ ] Implement multi level loops
 - [x] Add `,` command
+
+## Licence
+
+The module is licenced under the GNU AGPLv3, full text is included in the LICENCE file.
