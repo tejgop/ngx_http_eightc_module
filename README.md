@@ -19,7 +19,7 @@ Currently, EightC only supports one-level loops.
 
 It is named EightC because it used to have only eight symbols, now there are 10 so the name makes no sense :)
 
-EightC is inspired by Brainf***.
+EightC is inspired by Brain****.
 
 ##### Example:
 
